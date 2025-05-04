@@ -328,8 +328,7 @@ header {
 }
 
 .skill-list li:before {
-    content: "\\f00c";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 6 Free", serif;
     font-weight: 900;
     color: var(--secondary);
     margin-right: 0.5rem;
