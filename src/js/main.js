@@ -1,6 +1,5 @@
 // Import our CSS
 import '../css/style.css';
-// Import Font Awesome
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Wait for DOM to load
