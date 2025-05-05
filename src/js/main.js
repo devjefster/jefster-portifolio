@@ -1,6 +1,6 @@
 // Import our CSS
 import '../css/style.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
