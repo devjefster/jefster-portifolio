@@ -1,6 +1,5 @@
 {
   "name": "jefster-portfolio",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,6 +12,11 @@
     "vite": "^6.3.1",
     "gh-pages": "^6.0.0",
     "terser": "^5.22.0"
+  },
+  "homepage": "https://jefster.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjefster/jefster-portifolio.git"
   },
   "dependencies": {
     "smooth-scroll": "^16.1.3"
