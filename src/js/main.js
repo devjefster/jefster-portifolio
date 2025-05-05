@@ -1,6 +1,5 @@
 // Import our CSS
 import '../css/style.css';
-import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
             const targetId = this.getAttribute('href');
