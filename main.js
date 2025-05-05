@@ -1,5 +1,5 @@
 // Import our CSS
-import '../css/style.css';
+import './style.css';
 
 // Wait for DOM to load
 document.addEventListener('DOMContentLoaded', () => {
