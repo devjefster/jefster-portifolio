@@ -179,8 +179,18 @@ header {
 
 .hero p {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     opacity: 0.9;
+}
+
+.hero-location {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.hero-location i {
+    margin-right: 0.5rem;
 }
 
 .hero-btns {
@@ -316,23 +326,29 @@ header {
     color: var(--secondary);
 }
 
-.skill-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skill-list li {
-    margin-bottom: 0.75rem;
+.skill-tags {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.skill-list li:before {
-    font-family: "Font Awesome 6 Free", serif;
-    font-weight: 900;
-    color: var(--secondary);
-    margin-right: 0.5rem;
+.skill-tag {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    background-color: var(--light);
+    color: var(--dark);
+    border-radius: 20px;
     font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--light-gray);
+    transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
 }
 
 /* Experience Section */
@@ -491,6 +507,65 @@ header {
 .education-date i {
     margin-right: 8px;
     color: var(--gray);
+}
+
+/* Languages Section */
+.languages {
+    padding: 5rem 0;
+    background-color: var(--light-gray);
+}
+
+.languages-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.language-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.language-card:hover {
+    transform: translateY(-5px);
+}
+
+.language-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.language-level {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.language-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.language-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+    border-radius: 4px;
+    transition: width 1s ease;
 }
 
 /* Certifications Section */
@@ -805,6 +880,167 @@ footer {
     color: var(--gray);
 }
 
+/* Highlights Section */
+.highlights {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.highlight-card {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.highlight-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-label {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Certifications with Badges */
+.cert-item {
+    padding: 1.25rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cert-item:hover {
+    transform: translateY(-5px);
+}
+
+.cert-badge {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--light);
+    overflow: hidden;
+}
+
+.cert-badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cert-badge-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--primary);
+}
+
+.cert-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cert-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.35rem;
+    color: var(--dark);
+}
+
+.cert-issuer {
+    color: var(--gray);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+.cert-issuer i {
+    margin-right: 6px;
+    color: var(--gray);
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 2.5rem auto 0;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+}
+
+.contact-form-wrapper h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.35rem;
+}
+
+.contact-form .form-row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form .form-group {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .timeline-header {
@@ -818,5 +1054,29 @@ footer {
     .timeline-content {
         width: calc(100% - 80px);
         float: right;
+    }
+
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .highlight-number {
+        font-size: 2rem;
+    }
+
+    .contact-form .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cert-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .languages-grid {
+        flex-direction: column;
+        align-items: center;
     }
 }

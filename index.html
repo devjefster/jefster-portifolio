@@ -25,13 +25,53 @@
     <meta name="twitter:title" content="Jefster Farlei - Senior Software Engineer">
     <meta name="twitter:description"
           content="9+ years experience in designing and developing scalable backend solutions with expertise in AI/LLM technologies">
-    <meta name="twitter:image" content="./assets/images/profile.jpg">
+    <meta name="twitter:image" content="./assets/images/profile.png">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
           integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"
+          media="print" onload="this.media='all'"
     />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
     <link rel="stylesheet" href="./styles/styles.css"/>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jefster Farlei Fernandes Caixeta Júnior",
+      "jobTitle": "Senior Software Engineer",
+      "url": "https://www.jefster.dev",
+      "email": "mailto:jesterfarlei@gmail.com",
+      "telephone": "+55-62-99111-5292",
+      "image": "https://www.jefster.dev/assets/images/profile.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/jefster-farlei/",
+        "https://github.com/devjefster",
+        "https://medium.com/@dev.jefster"
+      ],
+      "knowsAbout": [
+        "Java", "Spring Boot", "Golang", "Python", "Microservices", "AWS", "Azure",
+        "Kubernetes", "Docker", "PostgreSQL", "Redis", "GraphQL", "REST APIs",
+        "Machine Learning", "LLM", "RAG", "LangChain"
+      ],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "UniAnhanguera"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "PUC Minas"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Maurício Nassau University"
+        }
+      ]
+    }
+    </script>
 
 </head>
 <body>
@@ -49,6 +89,7 @@
                 <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
                 <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
                 <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+                <li><a href="https://medium.com/@dev.jefster" target="_blank"><i class="fab fa-medium-m"></i> Blog</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
@@ -63,7 +104,8 @@
                 <img src="./assets/images/profile.png" alt="Jefster Farlei">
             </div>
             <h1>Jefster Farlei Fernandes Caixeta Júnior</h1>
-            <p>Results-driven Software Engineer with 9+ years of experience</p>
+            <p>Senior Backend Engineer | Java · Spring Boot · Golang · AI/LLM</p>
+            <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Based in Goiânia, Brazil · Open to remote & global opportunities</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/jefster-farlei/" target="_blank" aria-label="LinkedIn Profile"><i
                         class="fab fa-linkedin-in"></i></a>
@@ -77,6 +119,30 @@
                 <a href="./assets/files/CV.pdf" download class="btn btn-secondary" id="download-cv"><i
                         class="fas fa-download"></i> Download CV</a>
                 <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Highlights Section -->
+<section class="highlights" id="highlights">
+    <div class="container">
+        <div class="highlights-grid">
+            <div class="highlight-card" data-animate>
+                <div class="highlight-number">1M+</div>
+                <div class="highlight-label">Daily Transactions Handled</div>
+            </div>
+            <div class="highlight-card" data-animate>
+                <div class="highlight-number">35%</div>
+                <div class="highlight-label">System Throughput Improvement</div>
+            </div>
+            <div class="highlight-card" data-animate>
+                <div class="highlight-number">10M+</div>
+                <div class="highlight-label">Daily Transactions at Open Banking</div>
+            </div>
+            <div class="highlight-card" data-animate>
+                <div class="highlight-number">9+</div>
+                <div class="highlight-label">Years of Experience</div>
             </div>
         </div>
     </div>
@@ -110,53 +176,104 @@
         <div class="skills-container">
             <div class="skill-category">
                 <h3><i class="fas fa-laptop-code"></i> Programming Languages & Frameworks</h3>
-                <ul class="skill-list">
-                    <li>Java (8-21), Spring Boot, Hibernate</li>
-                    <li>Golang (Gin, GORM, Gorilla Mux)</li>
-                    <li>Python (NumPy, Pandas, Scikit-learn, Flask, FastAPI)</li>
-                    <li>Node.js</li>
-                </ul>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java (8-21)</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Hibernate</span>
+                    <span class="skill-tag">Golang</span>
+                    <span class="skill-tag">Gin</span>
+                    <span class="skill-tag">GORM</span>
+                    <span class="skill-tag">Gorilla Mux</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Node.js</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> AI / LLM & Data Science</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">LLMs</span>
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">LangGraph</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">Machine Learning</span>
+                </div>
             </div>
             <div class="skill-category">
                 <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-                <ul class="skill-list">
-                    <li>AWS (EC2, S3, RDS)</li>
-                    <li>Azure (CosmosDB, Synapse, DevOps)</li>
-                    <li>Kubernetes, Docker, Terraform</li>
-                    <li>CI/CD (Jenkins, GitHub Actions)</li>
-                </ul>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">EC2</span>
+                    <span class="skill-tag">S3</span>
+                    <span class="skill-tag">RDS</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">CosmosDB</span>
+                    <span class="skill-tag">Synapse</span>
+                    <span class="skill-tag">DevOps</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                </div>
             </div>
             <div class="skill-category">
                 <h3><i class="fas fa-database"></i> Databases & Storage</h3>
-                <ul class="skill-list">
-                    <li>PostgreSQL, MySQL</li>
-                    <li>Redis, SQL Server</li>
-                    <li>DynamoDB, CosmosDB</li>
-                    <li>Database optimization strategies</li>
-                </ul>
+                <div class="skill-tags">
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">DynamoDB</span>
+                    <span class="skill-tag">CosmosDB</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Database Optimization</span>
+                </div>
             </div>
             <div class="skill-category">
-                <h3><i class="fas fa-exchange-alt"></i> APIs & Protocols</h3>
-                <ul class="skill-list">
-                    <li>REST, GraphQL</li>
-                    <li>WebSockets, OAuth2, JWT</li>
-                    <li>API Gateway, Microservices</li>
-                </ul>
+                <h3><i class="fas fa-exchange-alt"></i> APIs, Messaging & Integration</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">REST</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">WebSockets</span>
+                    <span class="skill-tag">OAuth2</span>
+                    <span class="skill-tag">JWT</span>
+                    <span class="skill-tag">API Gateway</span>
+                    <span class="skill-tag">Microservices</span>
+                    <span class="skill-tag">Kafka</span>
+                    <span class="skill-tag">Apache Reactor</span>
+                    <span class="skill-tag">RabbitMQ</span>
+                    <span class="skill-tag">Apache Camel</span>
+                    <span class="skill-tag">Camunda</span>
+                </div>
             </div>
             <div class="skill-category">
-                <h3><i class="fas fa-shield-alt"></i> Monitoring & Security</h3>
-                <ul class="skill-list">
-                    <li>Prometheus, Grafana, Kibana</li>
-                    <li>OWASP Top 10, Security best practices</li>
-                    <li>Performance monitoring (JMeter, Flight Recorder)</li>
-                </ul>
+                <h3><i class="fas fa-shield-alt"></i> Monitoring, Security & Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Prometheus</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">Kibana</span>
+                    <span class="skill-tag">Azure Insights</span>
+                    <span class="skill-tag">OWASP Top 10</span>
+                    <span class="skill-tag">Security Best Practices</span>
+                    <span class="skill-tag">JMeter</span>
+                    <span class="skill-tag">Java Flight Recorder</span>
+                    <span class="skill-tag">Javers</span>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Experience Section with Company Logos -->
-<section class="experience" id="experience">ö
+<section class="experience" id="experience">
     <div class="container">
         <h2 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h2>
         <div class="timeline">
@@ -187,11 +304,11 @@
                         </div>
                     </div>
                     <ul>
-                        <li>𝗟𝗲𝗱 𝗯𝗮𝗰𝗸𝗲𝗻𝗱 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝘁𝗲𝗮𝗺 𝗮𝘀 𝗮 𝗧𝗲𝗰𝗵 𝗦𝗽𝗲𝗰𝗶𝗮𝗹𝗶𝘀𝘁, driving high-priority features, bug
+                        <li><b>Led backend development team as a Tech Specialist</b>, driving high-priority features, bug
                             fixes, and product enhancements to meet business-critical deadlines.
                         </li>
                         <li>
-                            <b> Integrated backend services with React-based UIs</b>, building end-to-end solutions for
+                            <b>Integrated backend services with React-based UIs</b>, building end-to-end solutions for
                             logistics and supply chain analytics, powered by machine learning models for demand
                             forecasting, route optimization, and predictive operations.
                         </li>
@@ -200,23 +317,16 @@
                             and <b>asynchronous processing with Kafka and Reactor</b>, improving system throughput by 35% and
                             enabling real-time data streaming across distributed services.
                         </li>
-                        <li>𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗲𝗱 𝗯𝗮𝗰𝗸𝗲𝗻𝗱 𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 𝘄𝗶𝘁𝗵 𝗔𝗜-𝗱𝗿𝗶𝘃𝗲𝗻 𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻𝘀 focused on logistics and supply chain
-                            data analytics, leveraging machine learning models for 𝗱𝗲𝗺𝗮𝗻𝗱 𝗳𝗼𝗿𝗲𝗰𝗮𝘀𝘁𝗶𝗻𝗴, 𝗿𝗼𝘂𝘁𝗲
-                            𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻, 𝗮𝗻𝗱 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝘃𝗲 𝗼𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗶𝗻𝘀𝗶𝗴𝗵𝘁𝘀.
+                        <li>Developed <b>high-performance APIs handling 1M+</b> daily transactions, integrating with
+                            <b>CosmosDB, Redis, SQL Server, and Azure Synapse</b> for scalable data storage and caching.
                         </li>
-                        <li>𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗱 𝗮𝗻𝗱 𝗼𝗽𝘁𝗶𝗺𝗶𝘇𝗲𝗱 𝗥𝗘𝗦𝗧 & 𝗚𝗿𝗮𝗽𝗵𝗤𝗟 𝗔𝗣𝗜𝘀, improving system performance by 35% and ensuring
-                            seamless real-time data processing across multiple platforms.
-                        </li>
-                        <li>Developed 𝗵𝗶𝗴𝗵-𝗽𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲 𝗔𝗣𝗜𝘀 𝗵𝗮𝗻𝗱𝗹𝗶𝗻𝗴 𝟭 𝗠+ daily transactions, integrating with
-                            𝗖𝗼𝘀𝗺𝗼𝘀𝗗𝗕, 𝗥𝗲𝗱𝗶𝘀, 𝗦𝗤𝗟 𝗦𝗲𝗿𝘃𝗲𝗿, 𝗮𝗻𝗱 𝗔𝘇𝘂𝗿𝗲 𝗦𝘆𝗻𝗮𝗽𝘀𝗲 for scalable data storage and caching.
-                        </li>
-                        <li>𝗘𝗻𝗵𝗮𝗻𝗰𝗲𝗱 𝘀𝘆𝘀𝘁𝗲𝗺 𝗼𝗯𝘀𝗲𝗿𝘃𝗮𝗯𝗶𝗹𝗶𝘁𝘆 and performance monitoring, implementing Java Flight Recorder,
+                        <li><b>Enhanced system observability</b> and performance monitoring, implementing Java Flight Recorder,
                             JMeter, and Azure Insights, reducing debugging time.
                         </li>
-                        <li>𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝗲𝗱 𝗮𝗻𝗱 𝗱𝗲𝗽𝗹𝗼𝘆𝗲𝗱 𝗚𝗼𝗹𝗮𝗻𝗴-𝗯𝗮𝘀𝗲𝗱 𝗔𝗣𝗜𝘀, leveraging Go's concurrency model and frameworks
+                        <li><b>Architected and deployed Golang-based APIs</b>, leveraging Go's concurrency model and frameworks
                             like Gorilla Mux, Gin, and GORM to build scalable, high-performance services.
                         </li>
-                        <li>𝗣𝗶𝗼𝗻𝗲𝗲𝗿𝗲𝗱 𝗣𝗿𝗼𝗼𝗳-𝗼𝗳-𝗖𝗼𝗻𝗰𝗲𝗽𝘁 (𝗣𝗼𝗖) 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁𝘀, evaluating new technologies like Go, Python,
+                        <li><b>Pioneered Proof-of-Concept (PoC) developments</b>, evaluating new technologies like Go, Python,
                             and Node.js, accelerating strategic decision-making.
                         </li>
                         <li><b>Tech Stack:</b> Java 17 & 21, Spring Boot, Tomcat, Spring Data, Spring Security,
@@ -255,15 +365,15 @@
                         </div>
                     </div>
                     <ul>
-                        <li>Technical lead on the Notification Service project.</li>
-                        <li>Integrated AI-powered notification systems with personalized content delivery using
+                        <li><b>Led the Notification Service project</b> as technical lead, driving architecture decisions and delivery.</li>
+                        <li><b>Integrated AI-powered notification systems</b> with personalized content delivery using
                             Python-based LLM solutions, increasing open rates by 45%.
                         </li>
-                        <li>Developed and optimized REST APIs, improving backend response time by 30%.</li>
-                        <li>Designed and implemented a Kafka-based notification service, improving message delivery
+                        <li><b>Developed and optimized REST APIs</b>, improving backend response time by 30%.</li>
+                        <li><b>Designed and implemented a Kafka-based notification service</b>, improving message delivery
                             reliability by 99.9%.
                         </li>
-                        <li>Engineered efficient data models for customer information, reducing query execution
+                        <li><b>Engineered efficient data models</b> for customer information, reducing query execution
                             times by 40%.
                         </li>
                         <li><b>Tech Stack:</b> Java 17, Spring Boot, Tomcat, OpenFeign, Spring Data, Hibernate, Maven,
@@ -301,12 +411,12 @@
                         </div>
                     </div>
                     <ul>
-                        <li>Designed and optimized API endpoints, improving data retrieval speeds by 40%.</li>
-                        <li>Developed high-performance data models for customer and transactional data.</li>
-                        <li>Ensured platform scalability, designing systems capable of handling 10M+ daily
+                        <li><b>Designed and optimized API endpoints</b>, improving data retrieval speeds by 40%.</li>
+                        <li><b>Developed high-performance data models</b> for customer and transactional data.</li>
+                        <li><b>Ensured platform scalability</b>, designing systems capable of handling 10M+ daily
                             transactions.
                         </li>
-                        <li>Improved backend efficiency, reducing response times by 30% via API optimizations.</li>
+                        <li><b>Improved backend efficiency</b>, reducing response times by 30% via API optimizations.</li>
                         <li><b>Tech Stack:</b> Java 11, Spring Boot, Feign, Hibernate, OAuth2, JWT, OpenID, PostgreSQL,
                             DynamoDB,
                             AWS EC2, Azure DevOps, Docker, Kubernetes, SonarQube, JUnit, Apache Camel, Camunda
@@ -371,7 +481,7 @@
                         <div class="timeline-header-content">
                             <h3>
                                 <div class="company-name">
-                                    <a href="https://www.qintess.com" target="_blank">Software Engineer | Indra</a>
+                                    <a href="https://www.indracompany.com/" target="_blank">Software Engineer | Indra</a>
                                 </div>
                                 <div class="project-name">
                                     Project: <a href="https://goias.gov.br/saude/" target="_blank">Secretária de Estado
@@ -555,52 +665,129 @@
     </div>
 </section>
 
+<!-- Languages Section -->
+<section class="languages" id="languages">
+    <div class="container">
+        <h2 class="section-title"><i class="fas fa-language"></i> Languages</h2>
+        <div class="languages-grid">
+            <div class="language-card">
+                <div class="language-name">Portuguese</div>
+                <div class="language-level">Native</div>
+                <div class="language-bar">
+                    <div class="language-progress" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="language-card">
+                <div class="language-name">English</div>
+                <div class="language-level">Professional Working Proficiency</div>
+                <div class="language-bar">
+                    <div class="language-progress" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Certifications Section -->
 <section class="certifications" id="certifications">
     <div class="container">
         <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
         <div class="cert-grid">
             <div class="cert-item">
-                <h3><i class="fab fa-aws"></i> AWS Certified Solutions Architect Associate</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i>AWS</div>
-            </div>
-            <div class="cert-item">
-                <h3><i class="fab fa-aws"></i> AWS Cloud Practitioner</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i>AWS</div>
-            </div>
-            <div class="cert-item">
-                <h3><i class="fab fa-microsoft"></i> AZ-900</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i> Azure Fundamentals - Microsoft</div>
-            </div>
-            <div class="cert-item">
-                <h3><i class="fab fa-microsoft"></i> DP-900</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i> Azure Data Fundamentals - Microsoft</div>
-            </div>
-            <div class="cert-item">
-                <h3><i class="fas fa-users"></i> SFPC</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i> Scrum Foundation Professional Certificate -
-                    CertiProf
+                <div class="cert-badge">
+                    <img src="./assets/images/aws-saa-badge.png" alt="AWS Certified Solutions Architect Associate Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fab fa-aws"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>AWS Certified Solutions Architect Associate</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i>AWS · 2023</div>
                 </div>
             </div>
             <div class="cert-item">
-                <h3><i class="fas fa-cogs"></i> DEPC</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i> DevOps Essentials Professional Certificate -
-                    CertiProf
+                <div class="cert-badge">
+                    <img src="./assets/images/aws-cp-badge.png" alt="AWS Cloud Practitioner Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fab fa-aws"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>AWS Cloud Practitioner</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i>AWS · 2022</div>
                 </div>
             </div>
             <div class="cert-item">
-                <h3><i class="fab fa-linux"></i> LFC108</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i> Cybersecurity Essentials - Linux Foundation</div>
-            </div>
-            <div class="cert-item">
-                <h3><i class="fas fa-shield-alt"></i> SKF100</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i> OWASP Top 10 Security Threats - Linux Foundation
+                <div class="cert-badge">
+                    <img src="./assets/images/az900-badge.png" alt="AZ-900 Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fab fa-microsoft"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>AZ-900</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i> Azure Fundamentals - Microsoft · 2022</div>
                 </div>
             </div>
             <div class="cert-item">
-                <h3><i class="fas fa-leaf"></i> LFC131</h3>
-                <div class="cert-issuer"><i class="fas fa-award"></i> Green Software for Practitioners - Linux
-                    Foundation
+                <div class="cert-badge">
+                    <img src="./assets/images/dp900-badge.png" alt="DP-900 Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fab fa-microsoft"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>DP-900</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i> Azure Data Fundamentals - Microsoft · 2022</div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">
+                    <img src="./assets/images/sfpc-badge.png" alt="SFPC Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fas fa-users"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>SFPC</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i> Scrum Foundation Professional Certificate -
+                        CertiProf · 2024
+                    </div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">
+                    <img src="./assets/images/depc-badge.png" alt="DEPC Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fas fa-cogs"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>DEPC</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i> DevOps Essentials Professional Certificate -
+                        CertiProf · 2024
+                    </div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">
+                    <img src="./assets/images/lfc108-badge.png" alt="LFC108 Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fab fa-linux"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>LFC108</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i> Cybersecurity Essentials - Linux Foundation · 2023</div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">
+                    <img src="./assets/images/skf100-badge.png" alt="SKF100 Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fas fa-shield-alt"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>SKF100</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i> OWASP Top 10 Security Threats - Linux Foundation · 2023
+                    </div>
+                </div>
+            </div>
+            <div class="cert-item">
+                <div class="cert-badge">
+                    <img src="./assets/images/lfc131-badge.png" alt="LFC131 Badge" onerror="this.style.display='none'">
+                    <div class="cert-badge-fallback"><i class="fas fa-leaf"></i></div>
+                </div>
+                <div class="cert-details">
+                    <h3>LFC131</h3>
+                    <div class="cert-issuer"><i class="fas fa-award"></i> Green Software for Practitioners - Linux
+                        Foundation · 2024
+                    </div>
                 </div>
             </div>
         </div>
@@ -612,7 +799,9 @@
     <div class="container">
         <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Me</h2>
         <div class="contact-info">
-            <p>I'm currently open to new opportunities and collaborations. Feel free to reach out to me through any of
+            <p>I'm currently open to new opportunities and collaborations. <b>Open to:</b> remote, hybrid, or on-site
+                roles; full-time or contract engagements. Willing to relocate for the right opportunity. Feel free to
+                reach out to me through any of
                 the channels below:</p>
             <div class="contact-links">
                 <a href="mailto:jesterfarlei@gmail.com" class="contact-link">
@@ -628,6 +817,23 @@
                     <i class="fab fa-github"></i> GitHub
                 </a>
             </div>
+        </div>
+        <div class="contact-form-wrapper">
+            <h3>Send me a message</h3>
+            <form class="contact-form" action="mailto:jesterfarlei@gmail.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
         </div>
     </div>
 </section>
